@@ -1,0 +1,45 @@
+#cardCharacters {
+  border-radius: 20px;
+  justify-content: "space-between";
+  padding: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+#cardCharacters:hover {
+  transform: translateY(-5px) scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.7), 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ocupation {
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ocupation {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 47px;
+}
+
+.info1 {
+  border: 1px black;
+  border-radius: 50px;
+  padding: 7px;
+  margin: 10px;
+  border-color: rgb(123, 126, 138);
+  background-color: aliceblue;
+}
