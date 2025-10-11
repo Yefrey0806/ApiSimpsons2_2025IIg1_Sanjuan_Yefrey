@@ -16,12 +16,18 @@ const CharactersPages = () => {
 
   return (
     <div class="content-cards">
-      <div class="animate__animated animate__zoomIn animate__delay-1s">
+      <div
+        id="title-cards"
+        class="animate__animated animate__zoomIn animate__delay-1s"
+      >
         <h2>Personajes Populares</h2>
         <p>Conoce algunos de los personajes más emblemáticos de Springfield</p>
       </div>
 
-      <div id="characters-container" class="animate__animated animate__fadeInUp animate__delay-1s">
+      <div
+        id="content-characters"
+        class="animate__animated animate__fadeInUp animate__delay-1s"
+      >
         {characterData.length > 0 ? (
           characterData.map((character) => (
             <CardCharacter key={character.id} data={character} />

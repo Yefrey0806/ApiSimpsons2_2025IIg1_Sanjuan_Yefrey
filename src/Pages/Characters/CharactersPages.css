@@ -1,4 +1,4 @@
-#characters-container {
+#content-characters {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,14 @@
   align-items: center;
   color: black;
   gap: 20px;
+}
 
+#title-cards {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   h2,
   p {
-    text-align: center;
+    padding: 10px;
   }
 }

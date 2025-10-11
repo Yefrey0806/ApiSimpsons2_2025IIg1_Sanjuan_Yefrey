@@ -9,18 +9,18 @@
 #cardCharacters:hover {
   transform: translateY(-5px) scale(1.02);
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 35px rgba(255, 215, 0, 0.7), 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.ocupation {
-  padding-top: 10px;
-  font-size: 0.8rem;
+  box-shadow: 0 0 35px rgba(49, 204, 231, 0.7), 0 8px 25px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 253, 214);
+;
 }
 
 .name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .ocupation {
@@ -32,7 +32,9 @@
   line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 47px;
+  height: 46px;
+  padding-top: 10px;
+  font-size: 0.8rem;
 }
 
 .info1 {
