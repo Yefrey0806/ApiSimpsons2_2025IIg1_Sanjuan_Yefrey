@@ -3,22 +3,32 @@ import CardCharacter from "../../Components/CardCharacter/CardCharacter";
 import CircularProgress from "@mui/material/CircularProgress";
 import "./CharactersPages.css";
 import "animate.css";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 const CharactersPages = () => {
   const [characterData, setCharacterData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+
+  const totalPages = 5;
 
   useEffect(() => {
-    fetch("https://thesimpsonsapi.com/api/characters")
+    setLoading(true);
+    fetch(`https://thesimpsonsapi.com/api/characters?page=${page}`)
       .then((response) => response.json())
-      .then((data) => setCharacterData(data.results))
-      .catch((error) => console.error("Error fetching character data:", error));
-  }, []);
+      .then((data) => {
+        setCharacterData(data.results);
+      })
+      .catch((error) => console.error("Error fetching character data:", error))
+      .finally(() => setLoading(false));
+  }, [page]);
 
   return (
-    <div class="content-cards">
+    <div className="content-cards" key={`${page}`}>
       <div
         id="title-cards"
-        class="animate__animated animate__zoomIn animate__delay-1s"
+        className="animate__animated animate__zoomIn animate__delay-0.5"
       >
         <h2>Personajes Populares</h2>
         <p>Conoce algunos de los personajes más emblemáticos de Springfield</p>
@@ -26,16 +36,34 @@ const CharactersPages = () => {
 
       <div
         id="content-characters"
-        class="animate__animated animate__fadeInUp animate__delay-1s"
+        className="animate__animated animate__fadeInUp animate__delay-0.8s"
       >
-        {characterData.length > 0 ? (
+        {loading ? (
+          <div>
+            <CircularProgress />
+          </div>
+        ) : (
           characterData.map((character) => (
             <CardCharacter key={character.id} data={character} />
           ))
-        ) : (
-          <CircularProgress />
         )}
       </div>
+
+      <Stack
+        spacing={2}
+        alignItems="center"
+        className="animate__animated animate__zoomIn animate__delay-1s"
+      >
+        <Pagination
+          count={totalPages}
+          page={page}
+          color="primary"
+          onChange={(event, value) => {
+            setLoading(true);
+            setPage(value);
+          }}
+        />
+      </Stack>
     </div>
   );
 };

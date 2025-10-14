@@ -1,4 +1,4 @@
-#cardCharacters {
+#card-Characters {
   border-radius: 20px;
   justify-content: "space-between";
   padding: 10px;
@@ -6,7 +6,7 @@
   text-overflow: ellipsis;
 }
 
-#cardCharacters:hover {
+#card-Characters:hover {
   transform: translateY(-5px) scale(1.02);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 35px rgba(49, 204, 231, 0.7), 0 8px 25px rgba(0, 0, 0, 0.2);

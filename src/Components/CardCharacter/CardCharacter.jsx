@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import "./CardCharacter.css";
-import { Margin } from "@mui/icons-material";
 
 const phrasesCharacters = {
   4: 1,
@@ -15,7 +14,7 @@ const phrasesCharacters = {
 
 const CardCharacter = ({ data }) => {
   return (
-    <Card id="cardCharacters" sx={{ width: 270, height: 320 }}>
+    <Card id="card-Characters" sx={{ width: 270, height: 320 }}>
       <CardActionArea style={{ backgroundColor: "transparent" }}>
         <CardMedia
           component="img"
@@ -29,10 +28,14 @@ const CardCharacter = ({ data }) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            <div class="name">{data.name}</div>
-            <p class="ocupation">{data.occupation}</p>
+            <div className="name">{data.name}</div>
+            <p className="ocupation">{data.occupation}</p>
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography
+            variant="body2"
+            component="div"
+            sx={{ color: "text.secondary" }}
+          >
             <p
               syile={{
                 display: "flex",
@@ -40,9 +43,9 @@ const CardCharacter = ({ data }) => {
                 gap: "1rem",
               }}
             >
-              {data.age && <span class="info1">Age:{data.age}</span>}
+              {data.age && <span className="info1">Age:{data.age}</span>}
               <span
-                class="info1"
+                className="info1"
                 style={{ color: data.status === "Alive" ? "green" : "red" }}
               >
                 {data.status}
