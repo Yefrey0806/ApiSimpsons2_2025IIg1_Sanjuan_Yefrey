@@ -1,10 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import EpisodesPages from "./Pages/Episodes/EpisodesPages";
 import CharactersPages from "./Pages/Characters/CharactersPages";
+import CharacterDetail from "./Pages/CharacterDetail/CharacterDetail";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -15,8 +13,9 @@ function App() {
       <h1>...</h1>
       <div id="contentBody">
         <Routes>
-          <Route path="/Episodes" element={<EpisodesPages />} />
           <Route path="/Characters" element={<CharactersPages />} />
+          {/* <Router path="/Characters/:id" element={<CharacterDetail />} /> */}
+          <Route path="/Episodes" element={<EpisodesPages />} />
         </Routes>
       </div>
     </Router>

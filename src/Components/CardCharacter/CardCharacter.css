@@ -11,7 +11,6 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 35px rgba(49, 204, 231, 0.7), 0 8px 25px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 253, 214);
-;
 }
 
 .name {
@@ -23,7 +22,7 @@
   font-size: 1.3rem;
 }
 
-.ocupation {
+.ocupation, .phrases {
   display: -webkit-box;
   display: box;
   -webkit-box-orient: vertical;

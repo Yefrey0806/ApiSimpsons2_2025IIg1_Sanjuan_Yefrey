@@ -52,12 +52,7 @@ const CardCharacter = ({ data }) => {
               </span>
             </p>
             <br />
-            <p
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
+            <p className="phrases">
               {data.phrases && data.phrases.length > 0
                 ? data.phrases[
                     phrasesCharacters[data.id] !== undefined
