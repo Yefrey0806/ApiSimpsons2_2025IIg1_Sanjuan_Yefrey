@@ -4,7 +4,6 @@
   align-items: center;
   gap: 2rem;
   width: 90vw;
-  flex-direction: row;
 }
 
 #card-character-detail {

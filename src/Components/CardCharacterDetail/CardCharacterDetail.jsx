@@ -84,6 +84,7 @@ const CardCharacterDetail = ({ data }) => {
             variant="subtitle1"
             fontSize={"1rem"}
             fontFamily={"revert"}
+            component="div"
           >
             <h4> {data.first_appearance_ep.name}</h4>
             <br />
