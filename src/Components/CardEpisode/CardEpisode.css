@@ -1,4 +1,4 @@
-#cardEpisode {
+#card-Episode {
   background: linear-gradient(145deg, #fff75a, #f7d700);
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
@@ -8,13 +8,13 @@
   position: relative;
 }
 
-#cardEpisode:hover {
+#card-Episode:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   border-color: #ffcc00;
 }
 
-#cardEpisode::before {
+#card-Episode::before {
   content: "";
   position: absolute;
   top: 0;
@@ -40,12 +40,12 @@
   color: #3d3d3d;
 }
 
-.MuiCardContent-root {
+#card-Episode .MuiCardContent-root {
   background-color: #fffce0;
   padding: 1rem;
   transition: background-color 0.3s ease;
 }
 
-#cardEpisode:hover .MuiCardContent-root {
+#card-Episode:hover .MuiCardContent-root {
   background-color: #fff685;
 }

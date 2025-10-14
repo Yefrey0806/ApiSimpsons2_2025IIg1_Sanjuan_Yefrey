@@ -8,7 +8,7 @@ import "./CardEpisode.css";
 
 const CardEpisode = ({ data }) => {
   return (
-    <Card id="cardEpisode" sx={{ width: 280, height: 340 }}>
+    <Card id="card-Episode" sx={{ width: 280, height: 340 }}>
       <CardActionArea style={{ backgroundColor: "transparent" }}>
         <CardMedia
           component="img"
@@ -34,8 +34,6 @@ const CardEpisode = ({ data }) => {
             <p className="info">
               <strong>Fecha de Lanzamiento:</strong> {data.airdate}
             </p>
-            
-            
           </Typography>
         </CardContent>
       </CardActionArea>
