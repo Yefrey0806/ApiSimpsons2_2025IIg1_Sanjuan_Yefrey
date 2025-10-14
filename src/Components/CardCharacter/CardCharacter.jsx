@@ -20,7 +20,7 @@ const CardCharacter = ({ data }) => {
       style={{ textDecoration: "none", color: "inherit" }}
     >
       <Card id="card-Characters" sx={{ width: 270, height: 320 }}>
-        <CardActionArea style={{ backgroundColor: "transparent" }}>
+        <CardActionArea >
           <CardMedia
             component="img"
             height="120"

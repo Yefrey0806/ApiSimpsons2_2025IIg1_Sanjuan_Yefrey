@@ -1,0 +1,43 @@
+.content-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #6ec9ff 0%, #fcd440 100%);
+  min-height: 100vh;
+}
+
+#title-cards {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #08244f;
+  text-shadow: 2px 2px 0px #ffe600;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#content-characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.select-season {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #0044cc;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #fef253;
+  color: #1b1b1b;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.select-season:hover {
+  border-color: #ffcc00;
+  background-color: #fff685;
+  transform: scale(1.05);
+}
