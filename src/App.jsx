@@ -1,14 +1,27 @@
+import { useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import EpisodesPages from "./Pages/Episodes/EpisodesPages";
 import CharactersPages from "./Pages/Characters/CharactersPages";
 import CharacterDetail from "./Pages/CharacterDetail/CharacterDetail";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import {
+  HashRouter  as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import PlacesPages from "./Pages/Places/PlacesPage";
 import MainHomePage from "./Pages/MainHome/MainHomePage";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+  useEffect(() => {
+    const navEntries = performance.getEntriesByType("navigation");
+    if (navEntries[0]?.type === "reload") {
+      window.location.replace("/MainHome");
+    }
+  }, []);
+
   return (
     <Router>
       <Header />
