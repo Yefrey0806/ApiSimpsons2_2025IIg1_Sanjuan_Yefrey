@@ -19,7 +19,7 @@ const CardCharacter = ({ data }) => {
       to={`/Characters/${data.id}`}
       style={{ textDecoration: "none", color: "inherit" }}
     >
-      <Card id="card-Characters" sx={{ width: 270, height: 320 }}>
+      <Card id="card-Character" sx={{ width: 270, height: 320 }}>
         <CardActionArea >
           <CardMedia
             component="img"

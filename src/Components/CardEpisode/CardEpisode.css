@@ -1,9 +1,8 @@
 #card-Episode {
-  background: linear-gradient(145deg, #fff75a, #f7d700);
+  background-color: #fff685;
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: 3px solid #0044cc;
   overflow: hidden;
   position: relative;
 }
@@ -11,7 +10,8 @@
 #card-Episode:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  border-color: #ffcc00;
+  box-shadow: 0 0 35px rgba(49, 204, 231, 0.795), 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.301);
 }
 
 #card-Episode::before {
@@ -21,14 +21,12 @@
   left: 0;
   width: 100%;
   height: 6px;
-  background: linear-gradient(to right, #0077ff, #ffca28, #ff0000);
 }
 
 .title {
-  color: #1a1306;
+  color: #000000;
   font-weight: 700;
   text-align: center;
-  text-shadow: 1px 1px 0px #fffbd0;
   font-family: "Comic Sans MS", "Poppins", sans-serif;
   font-size: 1.05rem;
 }

@@ -25,9 +25,9 @@ const CharactersPages = () => {
   }, [page]);
 
   return (
-    <div className="content-cards" key={`${page}`}>
+    <div className="characters-cards" key={`${page}`}>
       <div
-        id="title-cards"
+        id="title-characters"
         className="animate__animated animate__zoomIn animate__delay-0.5"
       >
         <h2>Personajes Populares</h2>

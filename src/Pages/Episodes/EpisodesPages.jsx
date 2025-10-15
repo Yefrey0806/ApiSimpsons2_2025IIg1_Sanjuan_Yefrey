@@ -23,10 +23,8 @@ const EpisodesPages = () => {
     setSelectedSeason(season);
 
     if (season === "") {
-
       setFilteredEpisodes(episodesData.slice(0, 10));
     } else {
-
       const filtered = episodesData
         .filter((ep) => String(ep.season) === String(season))
         .slice(0, 10);
@@ -35,34 +33,40 @@ const EpisodesPages = () => {
   };
 
   return (
-    <div className="content-cards">
+    <div className="episodes-cards">
       <div
-        id="title-cards"
-        className="animate_animated animatezoomIn animate_delay-1s"
+        id="title-episodes"
+        className="animate_animated animatezoomIn animate_delay-0.5s"
       >
-        <h2>Episodios Clásicos</h2>
+        <h2>
+          Episodios Clásicos
+        </h2>
+        <br />
         <p>
           Revive los mejores momentos de la familia más divertida de Springfield
         </p>
-
-        <select
-          value={selectedSeason}
-          onChange={(e) => handleFilter(e.target.value)}
-          className="select-season"
-        >
-          <option value="">Todas las Temporadas</option>
-          {Array.from(new Set(episodesData.map((ep) => ep.season))).map(
-            (season) => (
-              <option key={season} value={season}>
-                Temporada {season}
-              </option>
-            )
-          )}
-        </select>
+        <br />
+        <div>
+          {" "}
+          <select
+            className="season-episodes animate__animated animate__fadeInUp animate__delay-0.8s"
+            value={selectedSeason}
+            onChange={(e) => handleFilter(e.target.value)}
+          >
+            <option value="">Todas las Temporadas</option>
+            {Array.from(new Set(episodesData.map((ep) => ep.season))).map(
+              (season) => (
+                <option key={season} value={season}>
+                  Temporada {season}
+                </option>
+              )
+            )}
+          </select>
+        </div>
       </div>
-
+      <br />
       <div
-        id="content-characters"
+        id="content-episodes"
         className="animate_animated animatefadeInUp animate_delay-1s"
       >
         {filteredEpisodes.length > 0 ? (

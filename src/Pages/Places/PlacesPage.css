@@ -1,4 +1,4 @@
-.characters-cards {
+.places-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,16 @@
   gap: 20px;
 }
 
-#content-characters {
+#title-places {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  h2,
+  p {
+    padding: 10px;
+  }
+}
+
+#content-places {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,13 +25,4 @@
   padding: 20px;
   flex-wrap: wrap;
   object-fit: contain;
-}
-
-#title-characters {
-  text-align: center;
-  font-family: "Luckiest Guy", cursive;
-  h2,
-  p {
-    padding: 10px;
-  }
 }

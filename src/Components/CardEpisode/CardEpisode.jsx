@@ -24,7 +24,7 @@ const CardEpisode = ({ data }) => {
           <Typography gutterBottom variant="h6" component="div" align="center">
             <div className="title">{data.name}</div>
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography variant="body2" sx={{ color: "text.secondary" }} height={"100vh"}>
             <p className="info">
               <strong>Temporada:</strong> {data.season}
             </p>

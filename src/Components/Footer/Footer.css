@@ -1,0 +1,29 @@
+.home-simpsons-footer {
+  background-color: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.home-simpsons-author {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.home-simpsons-socials {
+  margin-top: 1rem;
+}
+
+.home-simpsons-socials a {
+  color: #ffcc00;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.home-simpsons-socials a:hover {
+  color: #fff75a;
+}
