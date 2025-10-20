@@ -15,12 +15,12 @@ import MainHomePage from "./Pages/MainHome/MainHomePage";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  useEffect(() => {
-    const navEntries = performance.getEntriesByType("navigation");
-    if (navEntries[0]?.type === "reload") {
-      window.location.replace("/MainHome");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const navEntries = performance.getEntriesByType("navigation");
+  //   if (navEntries[0]?.type === "reload") {
+  //     window.location.replace("/MainHome");
+  //   }
+  // }, []);
 
   return (
     <Router>
@@ -29,11 +29,12 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<Navigate to="/MainHome" replace />} /> */}
 
+          <Route path="/Places" element={<PlacesPages />} />
+
           <Route path="/MainHome" element={<MainHomePage />} />
           <Route path="/Characters" element={<CharactersPages />} />
           <Route path="/Characters/:id" element={<CharacterDetail />} />
           <Route path="/Episodes" element={<EpisodesPages />} />
-          <Route path="/Places" element={<PlacesPages />} />
         </Routes>
       </div>
       <Footer />
