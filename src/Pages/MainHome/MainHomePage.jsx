@@ -1,8 +1,10 @@
 import React from "react";
 import "./MainHomePage.css";
 import simpsons from "../../assets/img/the-simpsons.jpg";
+import { useNavigate } from "react-router-dom";
 
 function MainHomePage() {
+  const navigate = useNavigate();
   return (
     <div className="home-simpsons-container">
       <div
