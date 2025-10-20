@@ -9,7 +9,7 @@ function MainHomePage() {
         className="home-simpsons-background"
         style={{ backgroundImage: `url(${simpsons})` }}
       ></div>
-      
+
       <div className="home-simpsons-content">
         <h1 className="home-simpsons-title">Bienvenido a Springfield</h1>
         <p className="home-simpsons-subtitle">
@@ -18,7 +18,7 @@ function MainHomePage() {
 
         <button
           className="home-simpsons-button"
-          onClick={() => (window.location.href = "/Characters")}
+          onClick={() => navigate("/Characters")}
         >
           Entrar al Mundo Amarillo
         </button>
