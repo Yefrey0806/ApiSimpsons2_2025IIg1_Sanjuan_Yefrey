@@ -27,7 +27,7 @@ function App() {
       <Header />
       <div id="contentBody">
         <Routes>
-          <Route path="/" element={<Navigate to="/MainHome" replace />} />
+          {/* <Route path="/" element={<Navigate to="/MainHome" replace />} /> */}
 
           <Route path="/MainHome" element={<MainHomePage />} />
           <Route path="/Characters" element={<CharactersPages />} />
