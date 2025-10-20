@@ -5,7 +5,7 @@ import EpisodesPages from "./Pages/Episodes/EpisodesPages";
 import CharactersPages from "./Pages/Characters/CharactersPages";
 import CharacterDetail from "./Pages/CharacterDetail/CharacterDetail";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
