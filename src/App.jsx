@@ -15,12 +15,12 @@ import MainHomePage from "./Pages/MainHome/MainHomePage";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  // useEffect(() => {
-  //   const navEntries = performance.getEntriesByType("navigation");
-  //   if (navEntries[0]?.type === "reload") {
-  //     window.location.replace("/MainHome");
-  //   }
-  // }, []);
+  useEffect(() => {
+    const navEntries = performance.getEntriesByType("navigation");
+    if (navEntries[0]?.type === "reload") {
+      window.location.replace("/MainHome");
+    }
+  }, []);
 
   return (
     <Router>
