@@ -22,7 +22,7 @@ function MainHomePage() {
           className="home-simpsons-button"
           onClick={() => navigate("/Characters")}
         >
-          Entrar al Mundo Amarillo
+          Entra al Mundo Amarillo
         </button>
       </div>
     </div>
